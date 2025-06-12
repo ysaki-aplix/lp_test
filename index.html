@@ -5,17 +5,14 @@
         <title>LP TEST</title>
         <script>
             const url = new URL(window.location.href);
-            console.log(url);
 
             const params = url.searchParams;
             const targetUrl = params.get('url');
-            console.log(params.get('url'))
 
             if(targetUrl !== null && targetUrl !== undefined)
             {
                 const baclid = 'lp-test-20250612'
                 const redirectUrl = `${ targetUrl }?baclid=${ baclid }`;
-                //console.log(redirectUrl);
 
                 window.location.href = redirectUrl;
             }
