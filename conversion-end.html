@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>LP TEST</title>
+        <link rel="icon" href="data:," />
+        <script async src="https://dev.assets.meteor.bridge-ad.net/batag.js"></script>
+        <script>
+            console.log('batag front start');
+            window.batag_evq = window.batag_evq || [];
+            function batag() { batag_evq.push(arguments); }
+            batag({ type: "conversion", subtype: "end", name: "商品", price: 12345 });
+            console.log('batag front end');
+        </script>
+    </head>
+    <body>
+        LPテストページ END
+    </body>
+</html>
