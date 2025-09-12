@@ -8,7 +8,7 @@
         <script>
             console.log('batag front start');
             window.batag_evq = window.batag_evq || [];
-            function batag() { batag_evq.push(arguments); }
+            function batag(obj) { batag_evq.push(obj); }
             batag({"type": "cookie", "subtype":"set_id"});
             //console.log(window.batag_evq[0][0]);
             console.log('batag front end');
